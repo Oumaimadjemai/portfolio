@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion as Motion } from "framer-motion";
 import { Code2,GraduationCap,Laptop,Zap } from "lucide-react";
 
-export default function About() {
+export default function AboutComponent() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const features = [

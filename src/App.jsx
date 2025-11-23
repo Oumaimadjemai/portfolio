@@ -1,9 +1,10 @@
-import About from "./components/about";
-import MainComponent from "./components/main";
+
 import Navigation from "./components/Navigation";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import Contact from "./components/Contacts"
+import MainComponent from "./components/Main";
+import AboutComponent from "./components/about";
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
       <Navigation/>
       <div>
         <MainComponent/>
-        <About/>
+        <AboutComponent/>
         <Skills/>
         <Projects/>
         <Contact/>
