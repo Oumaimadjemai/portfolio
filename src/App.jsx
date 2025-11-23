@@ -4,7 +4,7 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import Contact from "./components/Contacts"
 import MainComponent from "./components/Main";
-import AboutComponent from "./components/about";
+import AboutComponent from "./components/About";
 
 export default function App() {
   return (
