@@ -18,13 +18,17 @@ export default function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const scrollToSection = (id) => {
+const scrollToSection = (id) => {
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
+    // Fermer le menu d'abord puis scroller après un petit délai
     setIsMobileMenuOpen(false);
+    setTimeout(() => {
+      element.scrollIntoView({ behavior: "smooth" });
+    }, 100); // 100ms est suffisant pour que le menu disparaisse
   }
 };
+
 
   return (
     <>
